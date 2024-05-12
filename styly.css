@@ -67,3 +67,22 @@ a {
 a:hover {
     text-decoration: underline; /* Podtržení při najetí myši */
 }
+section ul {
+    list-style-type: none; /* Odstranění teček u seznamu */
+    padding: 0;
+    display: flex; /* Nastavení flexboxu */
+    flex-wrap: wrap; /* Umožnění zalomení řádku */
+    gap: 10px; /* Mezera mezi položkami */
+}
+
+section ul li {
+    flex: 1 1 200px; /* Flex položka může růst a smršťovat, minimální základní šířka je 200px */
+    padding: 10px; 
+    line-height: 1.4;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrování textu */
+}
