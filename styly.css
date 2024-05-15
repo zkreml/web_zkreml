@@ -41,3 +41,62 @@ footer {
     padding: 10px;
     background-color: #f1f1f1;
 }
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Mezery mezi položkami */
+    padding: 20px; /* Okraj kolem kontejneru */
+}
+
+.flex-item {
+    width: 150px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 5px; /* Menší okraj kolem každé položky pro jemnější nastavení */
+}
+body, html {
+    height: 100%; /* Zajišťuje, že HTML a BODY pokrývají celou výšku stránky */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Nastaví flex items ve sloupci */
+}
+
+main {
+    flex: 1; /* Zajišťuje, že hlavní obsah zaujme všechno dostupné místo */
+}
+
+footer {
+    text-align: center; /* Centruje text ve zápatí */
+    padding: 10px 0; /* Přidává padding na horní a dolní části zápatí */
+    background-color: #f1f1f1; /* Nastaví barvu pozadí zápatí */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Přidává stín, který ohraničuje zápatí od zbytku stránky */
+}
+.flex-container {
+    display: flex;
+    justify-content: center;  /* Zarovná položky horizontálně na střed */
+    align-items: center;  /* Zarovná položky vertikálně na střed */
+    flex-wrap: wrap;  /* Umožní položkám zalamovat na nový řádek, pokud není dost místa */
+    height: 100vh;  /* Zajistí, že kontejner zaujme minimálně celou výšku obrazovky */
+    padding: 20px;
+    gap: 20px;  /* Vytvoří mezery mezi položkami */
+}
+.flex-item {
+    width: 200px;  /* Fixní šířka rámečků */
+    margin: 10px;  /* Okraje kolem každého rámečku */
+    padding: 20px;  /* Vnitřní padding rámečků */
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#dynamic-content {
+    min-height: 20vh;  /* Minimální výška obsahu, zajišťuje, že obsah neklesne příliš nízko */
+    margin-top: 50px;  /* Horní okraj pro oddělení od ostatních elementů */
+}
+
