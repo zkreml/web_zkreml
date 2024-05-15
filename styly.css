@@ -1,88 +1,43 @@
-/* Základní nastavení písma a pozadí pro celou stránku */
-body {
-    font-family: Arial, sans-serif; /* Nastavení písma */
-    line-height: 1.6; /* řádkování */
-    color: #333; /* Barva textu */
-    background-color: #f9f9f9; /* Barva pozadí */
-    padding: 20px; /* Vnitřní okraj pro celé tělo stránky */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-
-/* Centrování nadpisů h1 a h2 a specifické nastavení */
-h1, h2 {
-    text-align: center; /* Zarovnání textu na střed */
-    color: #555; /* Světle šedá barva textu */
-}
-
 /* Nastavení stylu pro všechny obrázky na stránce */
 img {
     display: block; /* Zobrazení jako blok pro možnost centrování */
     margin-left: auto; /* Automatický levý okraj pro centrování */
     margin-right: auto; /* Automatický pravý okraj pro centrování */
-    width: 200px; /* Pevná šířka obrázku */
-    border-radius: 80px; /* Velké zaoblení rohů */
+    width: 150px; /* Pevná šířka obrázku */
+    border-radius: 85px; /* Velké zaoblení rohů */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lehký stín pro lepší vizuální efekt */
 }
 
-/* Dodatečné styly, které můžete potřebovat pro odstavce a další elementy */
-p {
-    margin-top: 20px; /* Horní okraj pro odstavce */
-    margin-bottom: 20px; /* Dolní okraj pro odstavce */
-}
-section {
-    margin: 20px;
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     padding: 20px;
-    background-color: #fff; /* Bílé pozadí pro lepší čitelnost */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-section h2, section h3 {
-    color: #333;
-    text-align: center;
-}
-
-section p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
-    text-align: justify;
-}
-
-section ul {
-    list-style-type: none; /* Odstranění teček u seznamu */
-    padding: 0;
-}
-
-section ul li {
-    margin-bottom: 10px;
-    line-height: 1.4;
-    font-size: 14px;
-}
-
-a {
-    color: #0077cc; /* Modrá barva odkazů */
-    text-decoration: none; /* Žádné podtržení */
-}
-
-a:hover {
-    text-decoration: underline; /* Podtržení při najetí myši */
-}
-section ul {
-    list-style-type: none; /* Odstranění teček u seznamu */
-    padding: 0;
-    display: flex; /* Nastavení flexboxu */
-    flex-wrap: wrap; /* Umožnění zalomení řádku */
-    gap: 10px; /* Mezera mezi položkami */
-}
-
-section ul li {
-    flex: 1 1 200px; /* Flex položka může růst a smršťovat, minimální základní šířka je 200px */
-    padding: 10px; 
-    line-height: 1.4;
-    font-size: 14px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+.flex-item {
+    width: 150px;
+    padding: 10px;
+    background-color: #f4f4f4;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centrování textu */
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.flex-item:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
 }

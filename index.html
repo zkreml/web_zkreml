@@ -2,45 +2,36 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styly.css">
     <title>Zdenek Kreml</title>
+    <link rel="stylesheet" type="text/css" href="styly.css">
+     <title>Zdenek Kreml</title>
 </head>
 <body>
     <header>
-        <h1>Vítejte na mé osobní stránce!</h1>
+        <h1>Zdenek Kreml</h1>
     </header>
-    <section>
+    
         <img src="profilovka/archos.jpg" alt="Můj obrázek">
         
         <h2>O mně</h2>
-        <section>
-    <p>Ahoj, jmenuji se Zdeněk Kreml. Jsem členem komunity Arch Linux CZ a nadšeným podporovatelem open source. Moje záliba v technologiích sahá od operačních systémů jako Arch Linux až po bezpečnostně orientované mobilní platformy jako GrapheneOS. Své odborné dovednosti nejvíce uplatňuji při správě serverů, které běží na Ubuntu a Debianu, a při hostování a správě různých komunitních platforem a open source aplikací.</p>
-    <p>Jako <strong>Open Source Nadšenec</strong>, věřím v sílu otevřeného softwaru a jsem aktivním přispěvatelem do jeho komunity. Považuji se za <strong>Uživatele Arch Linuxu a GrapheneOS</strong>, kde mi tyto systémy umožňují spojit moji vášeň pro bezpečnost a stabilitu s praktickým využitím v každodenním životě.</p>
-    </section>
-
-<section>
-    <h2>Projekty a Správa</h2>
-    <p>Věnuji se správě a hostování různých aplikací, které přibližují lidem důležitost bezpečnosti a soukromí v digitálním světě. Zde jsou některé z hlavních projektů, které nabízím:</p>
-    <ul>
-        <li>🐘 <strong>Mastodon Instance</strong> - <a href="https://mastodon.arch-linux.cz">mastodon.arch-linux.cz</a><br>Sociální platforma pro uživatele Arch Linuxu.</li>
-        <li>🖼️ <strong>Pixelfed</strong> - <a href="https://pixelfed.cz">pixelfed.cz</a><br>Platforma pro sdílení obrázků, která respektuje soukromí uživatelů.</li>
-        <li>🔒 <strong>Cryptpad</strong> - <a href="https://cryptpad.arch-linux.cz">cryptpad.arch-linux.cz</a><br>Bezpečná a šifrovaná kolaborativní platforma pro sdílení dokumentů.</li>
-        <li>🐘 <strong>Další instance Mastodon</strong> - <a href="https://mamutovo.cz">mamutovo.cz</a><br>Podpora sociální sítě založené na otevřených standardech.</li>
-        <li>🔑 <strong>Bitwarden</strong> - <a href="https://bitwarden.archoslinux.cz">bitwarden.archoslinux.cz</a><br>Bezpečný správce hesel, který pomáhá uživatelům chránit jejich digitální identity.</li>
-        <li>📝 <strong> PrivateBin</strong> - <a href="https://privatebin.arch-linux.cz">privatebin.arch-linux.cz</a><br>Platforma pro bezpečné sdílení textů a údajů.</li>
-        <!-- Další projekty -->
-    </ul>
-    <h3>Další Webové Aplikace</h3>
-    <ul>
-        <li>📑 <strong>Linkding</strong>: Jednoduchý správce záložek.</li>
-        <li>📷 <strong>Immich</strong>: Serverová aplikace pro správu fotografií.</li>
-        <li>📖 <strong>Wallabag</strong>: Služba pro ukládání článků k pozdějšímu čtení.</li>
-        <!-- Další aplikace -->
-    </ul>
-</section>
-
+</head>
+<body>
+    </header>
+    <div class="centered-text">
+    <p>Jsem členem komunity Arch Linux CZ a nadšeným podporovatelem open source.</p>
+    <p>Moje záliba v technologiích sahá od operačních systémů jako Arch Linux až po bezpečnostně orientované mobilní platformy jako GrapheneOS.</p>
+    <p>Jako <strong>Open Source Nadšenec</strong>, věřím v sílu otevřeného softwaru a jsem aktivním přispěvatelem do jeho komunity.</p>
+    </div>
+    <main class="flex-container">
+        <a href="#" class="flex-item" onclick="showContent('social')">Sociální sítě</a>
+        <a href="#" class="flex-item" onclick="showContent('opensource')">Open Source</a>
+        <a href="#" class="flex-item" onclick="showContent('contact')">Kontakt</a>
+    </main>
+    <div id="dynamic-content"></div>
     <footer>
         <p>Kontaktujte mě na email@example.com</p>
     </footer>
+    <script src="skripty.js"></script>
 </body>
 </html>
+
