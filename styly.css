@@ -96,7 +96,28 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 #dynamic-content {
-    min-height: 20vh;  /* Minimální výška obsahu, zajišťuje, že obsah neklesne příliš nízko */
+    min-height: 10vh;  /* Minimální výška obsahu, zajišťuje, že obsah neklesne příliš nízko */
     margin-top: 50px;  /* Horní okraj pro oddělení od ostatních elementů */
+}
+.flex-item {
+    background-color: #f0f2f5; /* světlé šedá pro neutrální vzhled */
+    color: #333; /* tmavě šedá pro text */
+    border: 2px solid #ccc; /* lehký šedý rámeček */
+}
+.button {
+    background-color: #28a745; /* zelená pro tlačítka akce */
+    color: white;
+}
+
+.button:hover {
+    background-color: #218838; /* tmavší zelená pro efekt při najetí myší */
+}
+.button {
+    background-color: #28a745; /* zelená pro tlačítka akce */
+    color: white;
+}
+
+.button:hover {
+    background-color: #218838; /* tmavší zelená pro efekt při najetí myší */
 }
 
