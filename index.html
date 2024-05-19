@@ -2,9 +2,9 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Zdenek Kreml</title>
+    <title>Zdenek Kreml</title>  <!-- Jediný title tag -->
+    <script src="https://kit.fontawesome.com/88bcdf51c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styly.css">
-     <title>Zdenek Kreml</title>
 </head>
 <body>
     <header>
@@ -23,14 +23,22 @@
     <p>Jako <strong>Open Source Nadšenec</strong>, věřím v sílu otevřeného softwaru a jsem aktivním přispěvatelem do jeho komunity.</p>
     </div>
     <main class="flex-container">
-        <a href="#" class="flex-item" onclick="showContent('social')">Sociální sítě</a>
+        <a href="#" class="flex-item" onclick="showContent('social')">Sociální sítě </a>
         <a href="#" class="flex-item" onclick="showContent('opensource')">Open Source</a>
         <a href="#" class="flex-item" onclick="showContent('contact')">Kontakt</a>
         <script src="skripty.js"></script>
     </main>
     <div id="dynamic-content"></div>
+    <main>
+    <!-- Další obsah stránky bez ikony uživatele -->
+    </main>
+
     <footer>
-    <p>&copy; 2024 Zdenek Kreml</p>
+    <p>
+        <a href="/" style="text-decoration: none; color: inherit;">&copy; 2024 Zdenek Kreml</a> 
+        | <a href="https://git.arch-linux.cz/Archos/web_zkreml" target="_blank"><i class="fab fa-git-alt"></i> Gitea</a>
+    </p>
 </footer>
+
 </html>
 

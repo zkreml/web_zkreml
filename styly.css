@@ -120,4 +120,11 @@ footer {
 .button:hover {
     background-color: #218838; /* tmavší zelená pro efekt při najetí myší */
 }
+footer a {
+    text-decoration: none; /* Odstraňuje podtržení odkazu */
+    color: inherit; /* Dědí barvu textu od rodiče */
+}
 
+footer i {
+    margin-left: 5px; /* Přidává malý prostor mezi textem a ikonou */
+}
