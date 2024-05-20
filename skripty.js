@@ -13,6 +13,6 @@ function showContent(type) {
     } else if (type === 'contact') {
         content.innerHTML = '<a href="https://matrix.to/#/@archos:mxchat.cz" class="flex-item"><i class="fas fa-comments"></i> Matrix</a>'
                           + '<a href="mailto:email@zkreml.cz" class="flex-item"><i class="fas fa-envelope"></i> Email</a>'
-                          + '<a href="xmpp:archos@arch-linux.cz" class="flex-item"><i class="fas fa-comment-dots"></i> XMPP</a>';
+                          + '<a href="xmpp:archos@arch-linux.cz" class="flex-item" title="Pro použití tohoto kontaktu nainstalujte kompatibilní XMPP klient. Kontakt: archos@arch-linux.cz">XMPP</a>';
     }
 }

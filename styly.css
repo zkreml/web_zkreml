@@ -124,7 +124,82 @@ footer a {
     text-decoration: none; /* Odstraňuje podtržení odkazu */
     color: inherit; /* Dědí barvu textu od rodiče */
 }
-
 footer i {
     margin-left: 5px; /* Přidává malý prostor mezi textem a ikonou */
 }
+/* Základní styly pro desktopová zařízení */
+.flex-item {
+    font-size: 16px;  /* Základní velikost písma */
+    padding: 10px;
+}
+/* Základní styly pro rámečky */
+.flex-item {
+    width: 200px;  /* Základní šířka pro desktop */
+    margin: 10px;
+    padding: 20px;
+    font-size: 16px;  /* Základní velikost písma */
+}
+
+/* Media query pro malá zařízení */
+@media (max-width: 768px) {
+    .flex-item {
+        width: 120%;  /* Zvětší rámečky na celou šířku kontejneru */
+        padding: 20px;
+        font-size: 20px;  /* Větší písmo pro lepší čitelnost */
+        margin: 10px 0;  /* Vertikální marginy, horizontální zrušeny */
+    }
+}
+/* Media query pro malá zařízení */
+@media (max-width: 768px) {
+    .button {
+        font-size: 22px;  /* Zvětší písmo tlačítka */
+        padding: 15px 30px;  /* Větší padding pro snadnější ovládání */
+    }
+}
+/* Media query pro malá zařízení */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Zvětší základní velikost písma pro lepší čitelnost */
+    }
+
+    h1, h2, h3 {
+        font-size: 20px; /* Zvětší nadpisy pro lepší viditelnost */
+    }
+
+    .button, a {
+        font-size: 18px; /* Větší písmo pro tlačítka a odkazy */
+        padding: 15px 30px; /* Větší padding pro snadnější ovládání */
+    }
+
+    .flex-item {
+        padding: 20px; /* Větší padding uvnitř flex-itemů */
+        margin: 10px 0; /* Upravený margin pro lepší vzhled */
+        width: 100%; /* Flex-itemy zaujímají celou dostupnou šířku */
+    }
+}
+.flex-item {
+    font-size: 18px; /* Zvětší velikost písma pro lepší čitelnost */
+    font-weight: bold; /* Ztuční text pro lepší viditelnost */
+    color: #333; /* Tmavě šedá pro lepší kontrast */
+    padding: 20px; /* Ujistěte se, že je dostatek paddingu kolem textu */
+    margin: 10px; /* Dostatek prostoru mezi rámečky */
+    background-color: #f4f4f4; /* Světlé pozadí pro kontrast s textem */
+    border: 1px solid #ccc; /* Subtilní okraje mohou také pomoci definovat rámečky */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stín dodává hloubku */
+    border-radius: 10px; /* Zaoblené rohy pro modernější vzhled */
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        font-size: 20px; /* Ještě větší font na malých zařízeních */
+        padding: 25px; /* Více prostoru kolem textu */
+    }
+}
+/* Větší tlačítka na malých zařízeních */
+@media (max-width: 768px) {
+    .button {
+        padding: 15px 30px; /* Větší padding pro snadnější ovládání */
+        font-size: 20px; /* Větší font pro lepší čitelnost */
+    }
+}
+
