@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b8d4"/>
+      <stop offset="100%" stop-color="#53c7e9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark-mode background (works well even in light mode) -->
+  <circle cx="128" cy="128" r="118" fill="#0e0f12" stroke="url(#grad)" stroke-width="10"/>
+
+  <!-- modern A (rounded, geometric, centered) -->
+  <path d="M128 60 L178 196 H162 L147 160 H109 L94 196 H78 L128 60 Z M137 146 L128 123 L119 146 H137 Z"
+        fill="url(#grad)" />
+</svg>
+

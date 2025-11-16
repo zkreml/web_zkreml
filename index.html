@@ -2,198 +2,31 @@
 <html lang="cs">
 
 <head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zdeněk Kreml · Archos — osobní stránka</title>
-  <meta name="description"
-    content="NeoCard v2 — grafitově‑tyrkysový tmavý/světlý design, Inter + JetBrains Mono, čistý pohyb a přehledné projekty." />
+  <meta name="description" content="Osobní web — NeoCard v2 design, čistý tmavý/světlý režim.">
   <meta name="color-scheme" content="light dark" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0e0f12;
-      --bg-2: #14161b;
-      --fg: #eaecef;
-      --muted: #a8b1bb;
-      --link: #53c7e9;
-      --accent: #00b8d4;
-      --card: #17191f;
-      --border: #24272d;
-      --radius: 16px;
-      --pad: 20px;
-      --gap: 16px;
-      --shadow: 0 6px 30px rgba(0, 0, 0, .25);
-      --sans: 'Inter', system-ui, sans-serif;
-      --mono: 'JetBrains Mono', monospace;
-    }
 
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #f8fafc;
-        --bg-2: #ffffff;
-        --fg: #101418;
-        --muted: #60666f;
-        --link: #008fb1;
-        --accent: #00acc1;
-        --card: #ffffff;
-        --border: #d6d9de;
-        --shadow: 0 4px 18px rgba(0, 0, 0, .08);
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-    }
-
-    body {
-      background: radial-gradient(900px 500px at 20% -10%, rgba(0, 184, 212, .06), transparent 60%),
-        radial-gradient(900px 500px at 120% 10%, rgba(83, 199, 233, .06), transparent 60%), var(--bg);
-      color: var(--fg);
-      font: 16px/1.65 var(--sans);
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      transition: background .4s ease, color .4s ease;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    .wrap {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 40px var(--pad) 70px;
-    }
-
-    header {
-      display: grid;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
-
-    .tag {
-      font: 13px/1 var(--mono);
-      color: var(--muted);
-      letter-spacing: .05em;
-    }
-
-    h1 {
-      margin: .2rem 0 .4rem;
-      font-size: clamp(1.7rem, 3.5vw, 2.3rem);
-      line-height: 1.2;
-    }
-
-    .intro {
-      color: var(--muted);
-    }
-
-    nav {
-      margin-top: 12px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    nav a {
-      padding: 7px 14px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--fg);
-      transition: all .25s ease;
-      background: linear-gradient(180deg, var(--bg-2), transparent);
-    }
-
-    nav a:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    main {
-      display: grid;
-      gap: 24px;
-      margin-top: 22px;
-    }
-
-    section {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      background: var(--card);
-      box-shadow: var(--shadow);
-      transition: background .3s ease, border-color .3s ease;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: 1.2rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: var(--gap);
-    }
-
-    .card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px;
-      color: inherit;
-      text-decoration: none;
-      transition: all .3s ease;
-      background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, 0));
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: var(--accent);
-      box-shadow: 0 4px 24px rgba(0, 184, 212, .25);
-    }
-
-    .card h3 {
-      margin: 6px 0;
-      font-weight: 600;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    footer {
-      margin-top: 26px;
-      font-size: .95rem;
-      color: var(--muted);
-    }
-
-    footer a {
-      color: var(--muted);
-    }
-
-    footer a:hover {
-      color: var(--accent);
-    }
-  </style>
+  <!-- EXTERNÍ CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="wrap">
     <header>
-      <span class="tag">/home/archos</span>
+      <img src="img/avatar.jpg" alt="Zdeněk Kreml" class="avatar">
       <h1>Zdeněk Kreml · Archos</h1>
-      <p class="intro">Tvořím a spravuju komunitní služby. Baví mě otevřený software, čistý kód a pomalý web.</p>
+      <p class="intro">Starám se o komunitní servery, žiju v Arch Linuxu a podporuju open source.
+        Jsem člen Arch Linux CZ, zajímám se o bezpečnost, GrapheneOS a technologie.
+        Když nejsem u serverů, jsem na kole.</p>
       <nav>
         <a href="#projekty">Projekty</a>
         <a href="#odkazy">Odkazy</a>
@@ -204,26 +37,56 @@
     <main>
       <section id="projekty">
         <h2>Projekty</h2>
+
         <div class="cards">
-          <a class="card" href="#">
+
+          <a class="card" href="https://oscloud.cz">
             <h3>OSCloud</h3>
-            <p>Komunitní self‑hosting, Nextcloud, Matrix, wiki, návody.</p>
+            <p>Komunitní self-hosting, Nextcloud a další open source služby.</p>
           </a>
-          <a class="card" href="#">
+
+          <a class="card" href="https://chat.mxchat.cz">
             <h3>MXChat</h3>
-            <p>Matrix server, boti, mosty a onboarding.</p>
+            <p>Správa komunitního Matrix serveru.</p>
           </a>
-          <a class="card" href="#">
-            <h3>Trilium Next</h3>
-            <p>Osobní poznámkový systém a workflow.</p>
+
+          <a class="card" href="https://web.mxchat.cz">
+            <h3>Web MXChat</h3>
+            <p>Veřejný web pro MXChat – návody, info, podpora.</p>
           </a>
-          <a class="card" href="#">
-            <h3>VHSky.cz</h3>
-            <p>PeerTube kanál, návody a livestreamy.</p>
+
+          <a class="card" href="https://vhsky.cz">
+            <h3>VHSKY</h3>
+            <p>Správa komunitního PeerTube serveru jako součást Fediverse projektů.</p>
           </a>
+
+          <a class="card" href="https://mamutovo.cz">
+            <h3>Mamutovo</h3>
+            <p>Správa a provoz Mastodon serveru Mamutovo.</p>
+          </a>
+
+          <a class="card" href="https://mastodon.arch-linux.cz">
+            <h3>Mastodon Arch Linux</h3>
+            <p>Správa a provoz Mastodon serveru komunity Arch Linuxu.</p>
+          </a>
+
+          <a class="card" href="https://pixelfed.cz">
+            <h3>Pixelfed</h3>
+            <p>Správa a provoz komunitního Pixelfed serveru.</p>
+          </a>
+
+          <a class="card" href="https://phanpy.cz">
+            <h3>Phanpy</h3>
+            <p>Rychlý minimalistický Fediverse klient na vlastní doméně.</p>
+          </a>
+
+          <a class="card" href="https://arch-linux.cz">
+            <h3>Arch Linux CZ</h3>
+            <p>Komunita, návody, podpora a open source.</p>
+          </a>
+
         </div>
       </section>
-
       <section id="odkazy">
         <h2>Odkazy</h2>
         <div class="cards">
@@ -245,13 +108,18 @@
       <section id="kontakt">
         <h2>Kontakt</h2>
         <p>Email: <a href="mailto:ahoj@example.com">ahoj@example.com</a></p>
-        <p style="font-family:var(--mono); color:var(--muted);">PGP: ABCD 1234 EFGH 5678 90AB CDEF 1234 5678 90AB</p>
+        <p class="pgp">PGP: ABCD 1234 EFGH 5678 90AB CDEF 1234 5678 90AB</p>
       </section>
 
-      <footer>© <span id="y"></span> Zdeněk Kreml · <a href="/feed.xml">RSS</a></footer>
+      <footer>
+        © <span id="y"></span> Zdeněk Kreml · <a href="/feed.xml">RSS</a>
+      </footer>
     </main>
   </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
