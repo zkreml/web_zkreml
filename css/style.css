@@ -169,3 +169,30 @@ header {
   text-align: center;
   gap: 10px;
 }
+
+.subtext {
+  color: var(--muted);
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  color: inherit;
+  text-decoration: none;
+  transition: all .3s ease;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .03), transparent);
+  text-align: center;
+  /* ← TADY */
+}
+
+section a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: var(--accent);
+}
